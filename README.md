@@ -1,3 +1,7 @@
+Before use this template install Live Grep
+
+sudo apt-get install ripgrep
+
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v4+
