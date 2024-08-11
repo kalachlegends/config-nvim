@@ -11,7 +11,8 @@ return {
       "vim",
       "elixir",
       "eex",
-      "heex"
+      "heex",
+      "dart"
       -- add more arguments for adding more treesitter parsers
     },
   },
