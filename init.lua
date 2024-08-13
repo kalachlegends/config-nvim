@@ -14,6 +14,6 @@ if not pcall(require, "lazy") then
   vim.fn.getchar()
   vim.cmd.quit()
 end
-
+inoremap <A-j> <Esc>
 require "lazy_setup"
 require "polish"

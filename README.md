@@ -1,7 +1,3 @@
-Before use this template install Live Grep
-
-sudo apt-get install ripgrep
-
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v4+
@@ -36,4 +32,3 @@ git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
 ```shell
 nvim
 ```
-# config-nvim
