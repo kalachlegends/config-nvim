@@ -11,7 +11,8 @@ return {
     },
     textobjects = {
       select = {
-        enable = false,
+        enable = true,
+        disable = {"dart"}
       },
     },
 
