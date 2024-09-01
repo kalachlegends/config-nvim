@@ -1,4 +1,3 @@
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -37,12 +36,29 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {
-    },
+    servers = {},
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      tailwindcss = {
+        init_options = {
+          userLanguages = {
+            heex = "html-eex",
+            vue = "vue",
+            elixir = "html-eex",
+          },
+        },
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                'class[:]\\s*"([^"]*)"',
+              },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {

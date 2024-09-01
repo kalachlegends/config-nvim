@@ -8,5 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.dart" },
+  { import = "astrocommunity.editing-support.vim-move" },
   -- import/override with your plugins folder
 }
