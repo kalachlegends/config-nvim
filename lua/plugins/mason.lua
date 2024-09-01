@@ -1,4 +1,3 @@
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -10,7 +9,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "elixirls"
+        "elixirls",
+        "tailwindcss-language-server",
         -- add more arguments for adding more language servers
       },
     },
@@ -36,5 +36,4 @@ return {
       },
     },
   },
- 
 }
