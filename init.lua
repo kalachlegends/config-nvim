@@ -40,3 +40,7 @@ require "lazy_setup"
 require "polish"
 vim.api.nvim_set_keymap('n', '<Space>t1', ":lua require('toggleterm').exec('', 1)<CR>", { noremap = true, silent = true, desc = "Execute ToggleTerm with terminal ID 1" })
 vim.api.nvim_set_keymap('n', '<Space>t2', ":lua require('toggleterm').exec('', 2)<CR>", { noremap = true, silent = true, desc = "Execute ToggleTerm with terminal ID 2" })
+
+
+-- remap visual block mode
+vim.api.nvim_set_keymap('n', '<A-v>', '<C-v>', { noremap = true, silent = true })
