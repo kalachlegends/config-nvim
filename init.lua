@@ -80,9 +80,3 @@ function evalCodeFile(var1)
 end
 vim.api.nvim_set_keymap("n", "<leader>me", ":lua evalCodeFile()<CR>", { desc = "Eval code" })
 vim.api.nvim_set_keymap("n", "<leader>ma", ':lua evalCodeFile("all")', { desc = "Eval all" })
-
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-  signs = false,
-  virtual_text = false,
-  underline = false,
-})
