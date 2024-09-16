@@ -12,10 +12,10 @@ return {
     textobjects = {
       select = {
         enable = true,
-        disable = {"dart"}
+        disable = { "dart" },
       },
     },
-
+    illuminate = { enable = true, disable = { "elixir" } },
     indent = {
       enable = true,
       disable = { "dart" },

@@ -18,7 +18,7 @@ return {
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = false, -- enable or disable format on save globally
+        enabled = true, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -36,29 +36,16 @@ return {
       -- end
     },
     -- enable servers that you already have installed without mason
-    servers = {},
+    servers = {
+      -- "pyright"
+    },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
-      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-      tailwindcss = {
-        init_options = {
-          userLanguages = {
-            heex = "html-eex",
-            vue = "vue",
-            elixir = "html-eex",
-          },
-        },
-        settings = {
-          tailwindCSS = {
-            experimental = {
-              classRegex = {
-                'class[:]\\s*"([^"]*)"',
-              },
-            },
-          },
-        },
+      elixirls = {
+        autostart = false,
       },
+      -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
     handlers = {
