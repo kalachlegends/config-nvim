@@ -11,16 +11,13 @@ return {
     config = function()
       local replace_with_execute = require "custom-plugins.format_current_lines_ex.format_current_lines"
 
-      -- Создаем команду :ReplaceWithExecute
       vim.api.nvim_create_user_command(
         "ReplaceWithExecute",
         function() replace_with_execute.replace_selection_with_execute() end,
         { range = true, nargs = 0, bang = false }
       )
 
-      -- Создаем сочетание клавиш в визуальном режиме, например <leader>re
       vim.api.nvim_set_keymap("v", "<leader>mf", ":ReplaceWithExecute<CR>", { noremap = true, silent = true })
     end,
-    -- Указываем п -- Может быть полезно для организации
   },
 }

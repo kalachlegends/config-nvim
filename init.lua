@@ -80,3 +80,7 @@ function evalCodeFile(var1)
 end
 vim.api.nvim_set_keymap("n", "<leader>me", ":lua evalCodeFile()<CR>", { desc = "Eval code" })
 vim.api.nvim_set_keymap("n", "<leader>ma", ':lua evalCodeFile("all")', { desc = "Eval all" })
+vim.api.nvim_set_keymap("n", "<leader>ml", ':lua require("nvim-code-eval-plugin").execute("local", require("nvim-code-eval-plugin").get_selection()) <CR>', { desc = "Local eval" })
+vim.api.nvim_set_keymap("v", "<leader>ml", ':lua require("nvim-code-eval-plugin").execute("local", require("nvim-code-eval-plugin").get_selection()) <CR>', { desc = "Local eval" })
+vim.api.nvim_set_keymap("n", "-", "<cmd>foldclose<CR>", {desc = "Close code fold"})
+vim.api.nvim_set_keymap("n", "+", "<cmd>foldopen<CR>", {desc = "Open code fold"})
