@@ -13,5 +13,9 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.search.nvim-spectre" },
+  { import = "astrocommunity.completion.codeium-nvim" },
+  { import = "astrocommunity.editing-support.vim-visual-multi" },
+  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- { import = "astrocommunity.editing-support.auto-save-nvim" },
   -- import/override with your plugins folder
-} 
+}

@@ -8,7 +8,16 @@
       {
         "language": "elixir",
         "path": "./elixir.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./vue.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./javascript.json"
       }
+
     ]
   }
 }

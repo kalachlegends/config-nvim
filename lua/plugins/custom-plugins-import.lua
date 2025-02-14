@@ -1,15 +1,9 @@
 -- ~/.config/nvim/lua/plugins.lua
-
 return {
-  -- Другие плагины...
-
-  -- Добавляем ваш локальный плагин
-  {
     "format_current_lines", -- Имя плагина (может быть любое)
-    dir = "~/.config/nvim/lua/custom-plugins/format_current_lines_ex/format_current_lines.lua",
-    type = "local",
+    dir = "~/.config/nvim/lua/custom-plugins/format_current_lines_ex/",
     config = function()
-      local replace_with_execute = require "custom-plugins.format_current_lines_ex.format_current_lines"
+      local replace_with_execute = require "format_current_lines"
 
       vim.api.nvim_create_user_command(
         "ReplaceWithExecute",
@@ -19,5 +13,4 @@ return {
 
       vim.api.nvim_set_keymap("v", "<leader>mf", ":ReplaceWithExecute<CR>", { noremap = true, silent = true })
     end,
-  },
-}
+  }

@@ -1,0 +1,13 @@
+{
+  "fn-ex": {
+    "prefix": "fn-ex",
+    "body": [
+      "export const ${TM_FILENAME_BASE} = () => {",
+      "${1}",
+      "};",
+      ""
+    ],
+    "description": "exp fn"
+  }
+
+}
