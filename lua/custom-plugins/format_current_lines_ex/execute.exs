@@ -14,12 +14,12 @@ defmodule Execute do
           |> String.split("\n")
           |> Enum.map(fn string -> "\n\s\s" <> string end)
           |> Enum.join()
-  
+
         File.write!(
           "/home/artem/.config/nvim/lua/custom-plugins/format_current_lines_ex/result_tmp.txt",
           output
         )
-  
+
       error ->
         File.write!(
           "/home/artem/.config/nvim/lua/custom-plugins/format_current_lines_ex/result_tmp.txt",
@@ -34,5 +34,5 @@ defmodule Execute do
       )
   end
 end
-  
+
   Execute.main()

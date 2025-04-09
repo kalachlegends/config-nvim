@@ -92,3 +92,5 @@ vim.api.nvim_set_keymap("n", "-", "<cmd>foldclose<CR>", {desc = "Close code fold
 vim.api.nvim_set_keymap("n", "+", "<cmd>foldopen<CR>", {desc = "Open code fold"})
 vim.api.nvim_set_keymap('n', 'm', ':normal @q<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'm', ':normal @q<CR>', { noremap = true, silent = true })
+
+vim.opt.swapfile = false
