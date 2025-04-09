@@ -94,3 +94,8 @@ vim.api.nvim_set_keymap('n', 'm', ':normal @q<CR>', { noremap = true, silent = t
 vim.api.nvim_set_keymap('v', 'm', ':normal @q<CR>', { noremap = true, silent = true })
 
 vim.opt.swapfile = false
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  update_in_insert = false,
+})
